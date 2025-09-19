@@ -19,6 +19,7 @@ const int _vermenigvuldiging = 10;
 
 //Vraag getal 1 en sla het op
 Console.WriteLine("Geef jou eerste getal");
+
 _getal1 = int.Parse(Console.ReadLine());
 
 //Vraag getal 2 en sla het op
@@ -39,11 +40,11 @@ _gedeeld = (_vermenigvuldigd / _deling);
 //scherm leegmaken
 Console.Clear();
 // vul de tekst in en toon deze aan de gebruiker
-Console.WriteLine($"Uw gaf getallen {_getal1} en {_getal2} in." +
-    $"\r\nDe som hiervan is {_som}\r\nDit getal werd vermeerderd met 5. Dit gaf als uitkomst {_vermeerderd}" +
-    $"\r\nDaarna werd er vermenigvuldig met 10. Dit gaf als uitkomst {_vermenigvuldigd}" +
+Console.WriteLine($"Uw gaf getallen {_getal1.ToString()} en {_getal2.ToString()} in." +
+    $"\r\nDe som hiervan is {_som.ToString()}\r\nDit getal werd vermeerderd met 5. Dit gaf als uitkomst {_vermeerderd.ToString()}" +
+    $"\r\nDaarna werd er vermenigvuldig met 10. Dit gaf als uitkomst {_vermenigvuldigd.ToString()}" +
     $"\r\nAls laatste werd er gedeeld door 2. " +
-    $"\r\nHet uiteindelijke resultaat is {_gedeeld}\r\n");
+    $"\r\nHet uiteindelijke resultaat is {_gedeeld.ToString()}\r\n");
 
 
 Console.WriteLine("Druk op enter om af te sluiten");
