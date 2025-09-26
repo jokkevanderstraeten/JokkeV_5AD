@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokkeV_04 Project_Registreren", "JokkeV_04 Project_Registreren\JokkeV_04 Project_Registreren.csproj", "{1323D080-E310-4DD3-8515-C1CB08750C70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_registreren", "Project_registreren\Project_registreren.csproj", "{6FA2E956-58A5-4B70-AD80-038C643559D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1323D080-E310-4DD3-8515-C1CB08750C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1323D080-E310-4DD3-8515-C1CB08750C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1323D080-E310-4DD3-8515-C1CB08750C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1323D080-E310-4DD3-8515-C1CB08750C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA2E956-58A5-4B70-AD80-038C643559D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA2E956-58A5-4B70-AD80-038C643559D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA2E956-58A5-4B70-AD80-038C643559D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA2E956-58A5-4B70-AD80-038C643559D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {728451EA-F777-4106-93B5-96D56A6A4C02}
+		SolutionGuid = {165216AC-CED6-42B5-983E-C42AC6975AE1}
 	EndGlobalSection
 EndGlobal
