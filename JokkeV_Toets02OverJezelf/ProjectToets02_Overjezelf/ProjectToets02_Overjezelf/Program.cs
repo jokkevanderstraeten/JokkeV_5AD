@@ -1,13 +1,8 @@
-﻿//Jokke Van Der Straeten
+﻿
+
+//Jokke Van Der Straeten
 //29/09//2025
 //Toets02_OverJezelf
-
-
-
-//Stap 7: Wacht tot de gebruiker een toets intikt
-//Stap 8: maak het scherm leeg
-//Stap 9: toon de tekst met de door de gebruiker ingevulde gegevens
-
 
 //Velden
 string _Voornaam;
