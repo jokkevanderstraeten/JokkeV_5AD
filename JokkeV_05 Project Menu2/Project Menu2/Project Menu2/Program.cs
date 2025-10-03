@@ -13,9 +13,10 @@ int _UITKOMSTMIN = 0;
 int _UITKOMSTPLUS = 0;
 //programma
 
+
 // Intro
 Console.WriteLine("Welkom bij ons rekenprogramma");
-Console.ReadKey
+Console.ReadKey();
 //scherm leegmaken
 Console.Clear();
 do
