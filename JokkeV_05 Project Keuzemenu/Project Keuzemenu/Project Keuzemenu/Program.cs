@@ -46,10 +46,12 @@ do
             Console.WriteLine("ongeldige keuze, probeer opnieuw.");
             Console.WriteLine("\nDruk op een willekeurige toets om terug te gaan");
         }
-            catch
-    {
-
-            }
+        catch
+        {
+        //foutmelding bij ongeldige keuze
+        Console.WriteLine("ongeldige keuze, probeer opnieuw.");
+        Console.WriteLine("\nDruk op een willekeurige toets om terug te gaan");
+         }
     }
       
 }
