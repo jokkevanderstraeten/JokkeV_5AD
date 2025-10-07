@@ -12,12 +12,9 @@ int _UITKOMSTVER = 0;
 int _UITKOMSTMIN = 0;
 int _UITKOMSTPLUS = 0;
 
-String[] _herhaling = new string [5];
+
 //programma
-Console.WriteLine("Geef tweede getal in");
-_herhaling[2] = (Console.ReadLine());
-_herhaling[3] = (Console.ReadLine());
-Console.WriteLine($"getal 2 is{_herhaling[2]} Getal 3 is {_herhaling[3]}");
+
 
 // Intro
 Console.WriteLine("Welkom bij ons rekenprogramma");
