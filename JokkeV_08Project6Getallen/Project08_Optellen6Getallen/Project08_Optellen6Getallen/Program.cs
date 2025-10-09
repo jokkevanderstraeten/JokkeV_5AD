@@ -7,6 +7,7 @@
 //velden
  int[] _getallen = new int[6];
 int i = 0;
+
 Boolean _herhalen = true;
 //programma
 Console.WriteLine("Welkom bij mijn programma:");
@@ -22,8 +23,8 @@ do
             Console.WriteLine($"Geef getal {i}");
             _getallen[i] = int.Parse(Console.ReadLine());
         }
-
-        Console.WriteLine(_getallen[0] + _getallen[1] + _getallen[2] + _getallen[3] + _getallen[4] + _getallen[5]);
+        Console.Clear();
+        int _som = _getallen[0] + _getallen[1] + _getallen[2] + _getallen[3] + _getallen[4] + _getallen[5];
         Console.ReadKey();
         _herhalen = false;
     }
