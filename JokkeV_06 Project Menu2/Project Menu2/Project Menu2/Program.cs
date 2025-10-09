@@ -18,6 +18,7 @@ int _UITKOMSTPLUS = 0;
 
 // Intro
 Console.WriteLine("Welkom bij ons rekenprogramma");
+Console.WriteLine("Druk op enter om verder te gaan");
 Console.ReadKey();
 //scherm leegmaken
 Console.Clear();
@@ -26,13 +27,13 @@ do
     try
     {
         //vraag getal1 + opslaan
-        Console.WriteLine("Welk getal wil je gebruiken als eerste getal?");
+        Console.Write("Welk getal wil je gebruiken als eerste getal? ");
         _getal1 = int.Parse(Console.ReadLine());
         //scherm leegmaken
         Console.Clear();
 
         //vraag getal2 + opslaan
-        Console.WriteLine("Welk getal wil je gebruiken als tweede getal?");
+        Console.Write("Welk getal wil je gebruiken als tweede getal? ");
         _getal2 = int.Parse(Console.ReadLine());
         //scherm leegmaken
         Console.Clear();
