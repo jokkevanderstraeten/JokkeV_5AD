@@ -28,7 +28,7 @@ namespace JokkeV_10Dobbel
             do
             {
                 try
-                {
+                {   //keuze vragen en opslaan
                     Console.WriteLine("Wat wil je kiezen?");
                     Console.WriteLine("1. Dobbelsteen Gooien \n2. Afsluiten");
                     _Keuze = Byte.Parse(Console.ReadLine());
@@ -49,11 +49,12 @@ namespace JokkeV_10Dobbel
                         _herhalen = false;
                     }
                     //als er iets anders is geef foutmelding
-                    else {Console.WriteLine("Er ging iets mis kies 1 of 2"); }
+                    else { Console.WriteLine("Er ging iets mis kies 1 of 2"); }
                 }
-
-                catch {Console.WriteLine("Er ging iets mis kies 1 of 2"); }
+                //foutmelding
+                catch { Console.WriteLine("Er ging iets mis kies 1 of 2"); }
             }
+            //herhaal terwijl _herhalen true is
             while (_herhalen);
             
            
