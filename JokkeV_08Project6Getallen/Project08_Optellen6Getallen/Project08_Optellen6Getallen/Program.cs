@@ -15,6 +15,7 @@ Console.WriteLine("Druk op een toets om verder te gaan");
 Console.ReadKey();
 do
 {
+
     try
     {
         //vraag 6 getallen en sla deze op
