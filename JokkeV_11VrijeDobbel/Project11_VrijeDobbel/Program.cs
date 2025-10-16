@@ -52,6 +52,7 @@ namespace Project11_VrijeDobbel
                         _getal = random.Next(_minWaarde, _maxWaarde + 1);
                         Console.WriteLine($"De dobbelsteen geeft {_getal}");
                         _herhalen = false;
+
                     }
                     //als gebruiker kiest voor 2 sluit dan het programma af
                     else if (_keuze == 2)
