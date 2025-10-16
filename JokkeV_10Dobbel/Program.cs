@@ -51,7 +51,7 @@ namespace JokkeV_10Dobbel
                     }
                     //als er iets anders is geef foutmelding
                     else { Console.WriteLine("Er ging iets mis kies 1 of 2"); }
-                }
+                } 
                 //foutmelding
                 catch { Console.WriteLine("Er ging iets mis kies 1 of 2"); }
             }
