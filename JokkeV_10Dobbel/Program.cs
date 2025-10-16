@@ -18,45 +18,44 @@ namespace JokkeV_10Dobbel
             Byte _Keuze = 0;
             Byte _getal = 0;
             Random _rdm = new Random();
-            Boolean _herhalen = true;
-            //intro
+           
+            //stap 1: intro
             Console.WriteLine("Hallo, welkom bij mijn dobbelsteen\ndruk om verder te gaan");
             Console.ReadKey();
-            //Scherm leegmaken
             Console.Clear();
-            //keuze vragen en opslaan
             do
             {
                 try
-                {   //keuze vragen en opslaan
+                {   //stap 2: keuzemenu tonen en keuze opslaan
                     Console.WriteLine("Wat wil je kiezen?");
                     Console.WriteLine("1. Dobbelsteen Gooien \n2. Afsluiten");
                     _Keuze = Byte.Parse(Console.ReadLine());
-                    //scherm leegmaken
-                    Console.Clear();
-                    //als keuze = 1 geef een getal van 1-6
+                    //Stap 3: als (gooi)
                     if (_Keuze == 1)
                     {
+                        //bepaal getal van 1 - 6 en toon dit
                         _getal = Convert.ToByte(_rdm.Next(0, 7));
-                        Console.WriteLine($"De dobbelsteen stopt op {_getal}");
-                        _herhalen = false;
-                    }
-                    //als keuze = 2 sluit af en toon bericht
+                        Console.WriteLine($"De dobbelsteen stopt op {_getal}");                    }
+                    //Stap 4: als (afsluiten)
                     else if (_Keuze == 2)
                     {
+                        //sluit af en toon bericht
                         Console.WriteLine("Afgesloten");
-                        _herhalen = false;
                         return;
                         
                     }
-                    //als er iets anders is geef foutmelding
+                    //Stap 5: als er iets anders is geef foutmelding
                     else { Console.WriteLine("Er ging iets mis kies 1 of 2"); }
                 } 
-                //foutmeldingd
-                catch { Console.WriteLine("Er ging iets mis kies 1 of 2"); }
+                catch { //scherm wissen
+                        Console.Clear();
+                        //foutmelding
+                        Console.WriteLine("Er ging iets mis kies 1 of 2");
+                        
+                }
+
             }
-            //herhaal terwijl _herhalen true is
-            while (_herhalen);
+            while (_Keuze != 2);
             
            
         }
