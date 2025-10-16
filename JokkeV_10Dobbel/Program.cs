@@ -45,8 +45,9 @@ namespace JokkeV_10Dobbel
                     else if (_Keuze == 2)
                     {
                         Console.WriteLine("Afgesloten");
-                        return;
                         _herhalen = false;
+                        return;
+                        
                     }
                     //als er iets anders is geef foutmelding
                     else { Console.WriteLine("Er ging iets mis kies 1 of 2"); }
