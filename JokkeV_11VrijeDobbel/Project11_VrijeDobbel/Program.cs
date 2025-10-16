@@ -68,6 +68,7 @@ namespace Project11_VrijeDobbel
                         _herhalen = false;
                     }                
                 
+
                 }
                 while (_herhalen);
             }
