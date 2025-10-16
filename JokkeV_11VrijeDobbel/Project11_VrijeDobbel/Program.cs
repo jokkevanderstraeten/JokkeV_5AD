@@ -49,7 +49,7 @@ namespace Project11_VrijeDobbel
                         _maxWaarde = int.Parse(Console.ReadLine());
                         Console.Clear();
                         //getal geven
-                        _getal = random.Next(_minWaarde, _maxWaarde);
+                        _getal = random.Next(_minWaarde, _maxWaarde + 1);
                         Console.WriteLine($"De dobbelsteen geeft {_getal}");
                         _herhalen = false;
                     }
@@ -63,6 +63,11 @@ namespace Project11_VrijeDobbel
                     //foutmelding bij if statements
                     else
                     { Console.WriteLine("Er ging iets mis, geef een juiste keuze in"); }
+                    if (_getal == 67 )
+                    { Console.WriteLine("YANTOOOO 67777777");
+                        _herhalen = false;
+                    }                
+                
                 }
                 while (_herhalen);
             }
