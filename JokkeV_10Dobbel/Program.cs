@@ -18,7 +18,9 @@ namespace JokkeV_10Dobbel
             Byte _Keuze = 0;
             Byte _getal = 0;
             Random _rdm = new Random();
-           
+            
+            //programma 
+            
             //stap 1: intro
             Console.WriteLine("Hallo, welkom bij mijn dobbelsteen\ndruk om verder te gaan");
             Console.ReadKey();
@@ -33,7 +35,7 @@ namespace JokkeV_10Dobbel
                     //Stap 3: als (gooi)
                     if (_Keuze == 1)
                     {
-                        //bepaal getal van 1 - 6 en toon dit
+                        //bepaal getal van 1 - 6 en toon deze
                         _getal = Convert.ToByte(_rdm.Next(0, 7));
                         Console.WriteLine($"De dobbelsteen stopt op {_getal}");                    }
                     //Stap 4: als (afsluiten)
