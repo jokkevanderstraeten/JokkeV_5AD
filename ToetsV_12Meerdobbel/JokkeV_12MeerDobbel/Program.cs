@@ -11,10 +11,10 @@ namespace JokkeV_12MeerDobbel
             // Project 12: MeerDobbel
 
             // velden
-            int totaal = 0;
-            int ogen = 0;
-            byte keuze = 0;
-            Random dobbel = new Random();
+            int _totaal = 0;
+            int _ogen = 0;
+            byte _keuze = 0;
+            Random _dobbel = new Random();
             
 
             // programma
@@ -30,10 +30,10 @@ namespace JokkeV_12MeerDobbel
                 try
                 {
                     // Stap 1: nagaan of het aantal ogen al is ingesteld
-                    if (ogen == 0)
+                    if (_ogen == 0)
                     {
                         Console.Write("Met hoeveel ogen wil je gooien? ");
-                        ogen = int.Parse(Console.ReadLine());
+                        _ogen = int.Parse(Console.ReadLine());
                         
                     }
                     else
@@ -43,27 +43,28 @@ namespace JokkeV_12MeerDobbel
                         Console.WriteLine("1. Gooien");
                         Console.WriteLine("2. Resetten");
                         Console.WriteLine("3. Afsluiten");
-                        keuze = byte.Parse(Console.ReadLine());
+                        _keuze = byte.Parse(Console.ReadLine());
                         Console.Clear();
 
                         // Stap 3: uitvoer
                         //als gooien
-                        if (keuze == 1)
+                        if (_keuze == 1)
                         {
-                            int worp = dobbel.Next(1, ogen + 1);
-                            Console.WriteLine($"Je gooide {worp} met een max van {ogen}");
-                           totaal = worp + totaal;
-                            Console.WriteLine($"Totaal tot nu toe: {totaal}");
+                            int _worp = _dobbel.Next(0,_ogen + 1);
+                             
+                            Console.WriteLine($"Je gooide {_worp.ToString()} met een max van {_ogen.ToString()}");
+                           _totaal = _worp + _totaal;
+                            Console.WriteLine($"Totaal tot nu toe: {_totaal.ToString()}");
                         }
                         //als reset
-                        else if (keuze == 2)
+                        else if (_keuze == 2)
                         {
-                            ogen = 0;
-                            totaal = 0;
+                            _ogen = 0;
+                            _totaal = 0;
                             Console.WriteLine("Ogen en totaal zijn gereset.");
                         }
                         //als afsluiten
-                        else if (keuze == 3)
+                        else if (_keuze == 3)
                         {
                             Console.WriteLine("Daag!");
                             return;
@@ -80,7 +81,7 @@ namespace JokkeV_12MeerDobbel
                     Console.WriteLine("Er ging iets fout, probeer opnieuw.");
                 }
 
-            } while (keuze != 3);
+            } while (_keuze != 3);
         }
     }
 }
