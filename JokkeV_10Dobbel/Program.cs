@@ -37,7 +37,9 @@ namespace JokkeV_10Dobbel
                     {
                         //bepaal getal van 1 - 6 en toon deze
                         _getal = Convert.ToByte(_rdm.Next(0, 7));
-                        Console.WriteLine($"De dobbelsteen stopt op {_getal}");                    }
+                        Console.WriteLine($"De dobbelsteen stopt op {_getal}");
+                 
+                    }
                     //Stap 4: als (afsluiten)
                     else if (_Keuze == 2)
                     {
