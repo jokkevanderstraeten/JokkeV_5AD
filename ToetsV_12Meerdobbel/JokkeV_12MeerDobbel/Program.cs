@@ -19,13 +19,14 @@ namespace JokkeV_12MeerDobbel
 
             // programma
             
-            Console.WriteLine("Welkom bij het programma MeerDob!");
+            Console.WriteLine("Welkom bij het programma!");
             Console.WriteLine("Druk op een toets om verder te gaan...");
             Console.ReadKey();
             Console.Clear();
 
             do
             {
+               
                 try
                 {
                     // Stap 1: nagaan of het aantal ogen al is ingesteld
