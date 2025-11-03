@@ -13,6 +13,7 @@ namespace JokkeV_12MeerDobbel
             // velden
             int _totaal = 0;
             int _ogen = 0;
+            int _worp = 0;
             byte _keuze = 0;
             Random _dobbel = new Random();
             
@@ -42,7 +43,7 @@ namespace JokkeV_12MeerDobbel
                         Console.WriteLine("\nMaak een keuze:");
                         Console.WriteLine("1. Gooien");
                         Console.WriteLine("2. Resetten");
-                        Console.WriteLine("3. Afsluiten");
+                        Console.WriteLine("3. afsluiten");
                         _keuze = byte.Parse(Console.ReadLine());
                         Console.Clear();
 
@@ -50,11 +51,20 @@ namespace JokkeV_12MeerDobbel
                         //als gooien
                         if (_keuze == 1)
                         {
-                            int _worp = _dobbel.Next(0,_ogen + 1);
+                            _worp = _dobbel.Next(0,_ogen + 1);
                              
                             Console.WriteLine($"Je gooide {_worp.ToString()} met een max van {_ogen.ToString()}");
-                           _totaal = _worp + _totaal;
+                           _totaal += _worp;
                             Console.WriteLine($"Totaal tot nu toe: {_totaal.ToString()}");
+                            //keuzemenu opnieuw
+                            Console.WriteLine("\nMaak een keuze:");
+                            Console.WriteLine("1. opnieuw  Gooien");
+                            Console.WriteLine("2. Resetten");
+                            Console.WriteLine("3. afsluiten");
+                            
+                            _keuze = byte.Parse(Console.ReadLine());
+                            Console.Clear();
+                            
                         }
                         //als reset
                         else if (_keuze == 2)
@@ -81,7 +91,7 @@ namespace JokkeV_12MeerDobbel
                     Console.WriteLine("Er ging iets fout, probeer opnieuw.");
                 }
 
-            } while (_keuze != 3);
+            } while (_keuze != 4);
         }
     }
 }
