@@ -75,7 +75,7 @@ namespace JokkeV_12MeerDobbel
                         }
                         //als afsluiten
                         else if (_keuze == 3)
-                        {
+                        {   
                             Console.WriteLine("Daag!");
                             return;
                         }
@@ -91,7 +91,7 @@ namespace JokkeV_12MeerDobbel
                     Console.WriteLine("Er ging iets fout, probeer opnieuw.");
                 }
 
-            } while (_keuze != 4);
+            } while (_keuze != 3  );
         }
     }
 }
